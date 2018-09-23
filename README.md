@@ -7,6 +7,9 @@ add enlisted and warrant officer ranks, add housing allowance and special pays, 
 |-------------------|----------------------------|
 |Base Pay Calculator|Calculates military base pay|
 
+## Built With
+* [Python 3.7] - Language used
+* [Flask 1.0.2] - The Web Framework Used
 
 ## Authors
 
