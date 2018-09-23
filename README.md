@@ -15,3 +15,5 @@ add enlisted and warrant officer ranks, add housing allowance and special pays, 
 ## License
 
 This project is licensed under the GNU LESSER GENERAL PUBLIC LICENSE - see the [LICENSE.md](LICENSE.md) file for details
+
+Jackpot!
