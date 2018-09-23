@@ -9,7 +9,7 @@ monthly_pay_rates = {"O1": ['3,107.70', '3,234.90', '3,910.20', '3,910.20', '3,9
 "O8": ['10,398.60', '10,739.40', '10,965.60', '11,028.60', '11,310.90', '11,781.90', '11,891.40', '12,339.00', '12,467.40', '12,852.90', '13,410.90', '13,925.10', '14,268.30', '14,268.30', '14,268.30', '14,268.30', '14,625.60', '14,625.60', '14,991.00', '14,991.00', '14,991.00', '14,991.00']
 }
 
-def calculatepay(rank, year, yearly = False):
+def calculatepay(rank, year):
     ''' Fetches paygrade salary data from monthly_pay_rates dictionary
 
     Correlates rank key with years in service to pull monthly salary data from monthly_pay_rates
@@ -18,7 +18,6 @@ def calculatepay(rank, year, yearly = False):
     Args:
         rank: is the monthly_pay_rates key and a string that corresponds to a soldiers paygrade
         year: an integer that corresponds to soldiers time in service
-        yearly: determines if calculatepay should return monthly or yearly base pay
     Returns:
         A dict that is mapped with a Bi-Weekly, Monthly, and Yearly key with a corresponding
         salary. For Example:
@@ -43,4 +42,4 @@ def calculatepay(rank, year, yearly = False):
     except:
         return "An error occured"
 
-print(calculatepay("O4", 10, True))
+print(calculatepay("O4", 10))
